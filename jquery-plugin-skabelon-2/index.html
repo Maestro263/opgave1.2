@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+
+    <title>Plugin skabelon</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/pluginSkabelon.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+    <button id="show">
+        blue
+    </button>
+<button id="hide">
+    red
+</button>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque eaque laborum non nulla odio.
+        Dignissimos eaque inventore minus nam, non officiis quaerat quis! Corporis enim ex nulla totam veniam!</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="js/showHide.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".text").showHide({
+            opacitys: {
+                opacity: '100',
+                fontSize: '32pt',
+                bgColor: 'green'
+            }
+
+    });
+    });
+
+
+        /*
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });*/
+
+</script>
+</body>
+</html>
